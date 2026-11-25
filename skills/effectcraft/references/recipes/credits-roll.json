@@ -1,0 +1,277 @@
+{
+ "id": "credits-roll",
+ "title": "Финальные титры",
+ "standalone": true,
+ "placeholders": [
+  "Режиссёр",
+  "Имя режиссёра",
+  "Оператор",
+  "Имя оператора",
+  "Звук",
+  "Имя звукорежиссёра"
+ ],
+ "steps": [
+  {
+   "command": "comp.new",
+   "params": {
+    "name": "CreditsRoll",
+    "width": 1920,
+    "height": 1080,
+    "frameRate": 25,
+    "duration": 12
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "name": "Credit1",
+    "text": "Режиссёр",
+    "position": [
+     960,
+     1180
+    ],
+    "size": 48,
+    "justify": "center",
+    "fill": "#ffffff"
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Credit1",
+    "path": "transform/position",
+    "time": 0,
+    "timeBase": "comp",
+    "value": [
+     960,
+     1180,
+     0
+    ]
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Credit1",
+    "path": "transform/position",
+    "time": 11.96,
+    "timeBase": "comp",
+    "value": [
+     960,
+     -850,
+     0
+    ]
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "name": "Credit2",
+    "text": "Имя режиссёра",
+    "position": [
+     960,
+     1310
+    ],
+    "size": 60,
+    "justify": "center",
+    "fill": "#ffffff"
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Credit2",
+    "path": "transform/position",
+    "time": 0,
+    "timeBase": "comp",
+    "value": [
+     960,
+     1310,
+     0
+    ]
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Credit2",
+    "path": "transform/position",
+    "time": 11.96,
+    "timeBase": "comp",
+    "value": [
+     960,
+     -720,
+     0
+    ]
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "name": "Credit3",
+    "text": "Оператор",
+    "position": [
+     960,
+     1440
+    ],
+    "size": 48,
+    "justify": "center",
+    "fill": "#ffffff"
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Credit3",
+    "path": "transform/position",
+    "time": 0,
+    "timeBase": "comp",
+    "value": [
+     960,
+     1440,
+     0
+    ]
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Credit3",
+    "path": "transform/position",
+    "time": 11.96,
+    "timeBase": "comp",
+    "value": [
+     960,
+     -590,
+     0
+    ]
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "name": "Credit4",
+    "text": "Имя оператора",
+    "position": [
+     960,
+     1570
+    ],
+    "size": 60,
+    "justify": "center",
+    "fill": "#ffffff"
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Credit4",
+    "path": "transform/position",
+    "time": 0,
+    "timeBase": "comp",
+    "value": [
+     960,
+     1570,
+     0
+    ]
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Credit4",
+    "path": "transform/position",
+    "time": 11.96,
+    "timeBase": "comp",
+    "value": [
+     960,
+     -460,
+     0
+    ]
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "name": "Credit5",
+    "text": "Звук",
+    "position": [
+     960,
+     1700
+    ],
+    "size": 48,
+    "justify": "center",
+    "fill": "#ffffff"
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Credit5",
+    "path": "transform/position",
+    "time": 0,
+    "timeBase": "comp",
+    "value": [
+     960,
+     1700,
+     0
+    ]
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Credit5",
+    "path": "transform/position",
+    "time": 11.96,
+    "timeBase": "comp",
+    "value": [
+     960,
+     -330,
+     0
+    ]
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "name": "Credit6",
+    "text": "Имя звукорежиссёра",
+    "position": [
+     960,
+     1830
+    ],
+    "size": 60,
+    "justify": "center",
+    "fill": "#ffffff"
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Credit6",
+    "path": "transform/position",
+    "time": 0,
+    "timeBase": "comp",
+    "value": [
+     960,
+     1830,
+     0
+    ]
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Credit6",
+    "path": "transform/position",
+    "time": 11.96,
+    "timeBase": "comp",
+    "value": [
+     960,
+     -200,
+     0
+    ]
+   }
+  }
+ ]
+}

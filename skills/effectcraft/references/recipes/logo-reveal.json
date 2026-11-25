@@ -1,0 +1,43 @@
+{
+ "id": "logo-reveal",
+ "title": "Появление логотипа",
+ "standalone": true,
+ "placeholders": [
+  "Логотип"
+ ],
+ "steps": [
+  {
+   "command": "comp.new",
+   "params": {
+    "name": "Logo",
+    "width": 1920,
+    "height": 1080,
+    "frameRate": 25,
+    "duration": 4
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "text": "Логотип",
+    "name": "LogoTitle"
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "path": "transform/opacity",
+    "time": 0,
+    "value": 0
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "path": "transform/opacity",
+    "time": 1,
+    "value": 100
+   }
+  }
+ ]
+}

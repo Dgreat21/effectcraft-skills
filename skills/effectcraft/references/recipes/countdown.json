@@ -1,0 +1,116 @@
+{
+ "id": "countdown",
+ "title": "Отсчёт 3–2–1",
+ "standalone": true,
+ "placeholders": [
+  "СТАРТ"
+ ],
+ "steps": [
+  {
+   "command": "comp.new",
+   "params": {
+    "name": "CountdownIntro",
+    "width": 1920,
+    "height": 1080,
+    "frameRate": 25,
+    "duration": 4
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "name": "Three",
+    "text": "3",
+    "position": [
+     960,
+     610
+    ],
+    "size": 180,
+    "justify": "center",
+    "fill": "#ffffff"
+   }
+  },
+  {
+   "command": "layer.timing",
+   "params": {
+    "layers": [
+     "Three"
+    ],
+    "in": 0,
+    "out": 1
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "name": "Two",
+    "text": "2",
+    "position": [
+     960,
+     610
+    ],
+    "size": 180,
+    "justify": "center",
+    "fill": "#ffffff"
+   }
+  },
+  {
+   "command": "layer.timing",
+   "params": {
+    "layers": [
+     "Two"
+    ],
+    "in": 1,
+    "out": 2
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "name": "One",
+    "text": "1",
+    "position": [
+     960,
+     610
+    ],
+    "size": 180,
+    "justify": "center",
+    "fill": "#ffffff"
+   }
+  },
+  {
+   "command": "layer.timing",
+   "params": {
+    "layers": [
+     "One"
+    ],
+    "in": 2,
+    "out": 3
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "name": "Start",
+    "text": "СТАРТ",
+    "position": [
+     960,
+     610
+    ],
+    "size": 120,
+    "justify": "center",
+    "fill": "#ffffff"
+   }
+  },
+  {
+   "command": "layer.timing",
+   "params": {
+    "layers": [
+     "Start"
+    ],
+    "in": 3,
+    "out": 4
+   }
+  }
+ ]
+}

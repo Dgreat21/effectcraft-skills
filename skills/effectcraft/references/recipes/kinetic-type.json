@@ -1,0 +1,44 @@
+{
+ "id": "kinetic-type",
+ "title": "Кинетический текст",
+ "standalone": true,
+ "placeholders": [
+  "Короткая фраза"
+ ],
+ "steps": [
+  {
+   "command": "comp.new",
+   "params": {
+    "name": "Type",
+    "width": 1080,
+    "height": 1920,
+    "duration": 5,
+    "frameRate": 30
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "text": "Короткая фраза",
+    "name": "Phrase",
+    "size": 64
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "path": "transform/opacity",
+    "time": 0,
+    "value": 0
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "path": "transform/opacity",
+    "time": 0.5,
+    "value": 100
+   }
+  }
+ ]
+}

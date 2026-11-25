@@ -1,10 +1,10 @@
 {
   "name": "effectcraft-skills",
-  "version": "0.1.0-dev.69",
-  "description": "Effectcraft independent skills with pinned first-use installation; development release.",
+  "version": "0.2.0-studio.1",
+  "description": "EffectCraft for agents: one explicit skill over the installed CLI and MCP (topic references generated from CLI 0.25.1, scene recipes, verify script, Stop gate) plus a read-only verifier subagent. Installs nothing.",
   "author": {
-    "name": "Full AIGC Skills"
+    "name": "Dgreat21 (fork of Full AIGC Skills)"
   },
-  "repository": "https://github.com/full-aigc-skills/effectcraft-skills",
+  "repository": "https://github.com/Dgreat21/effectcraft-skills",
   "license": "Apache-2.0"
 }

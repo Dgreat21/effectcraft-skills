@@ -2,6 +2,7 @@
 name: effectcraft-editor
 description: 当需要在支持 MCP Apps 或内置浏览器的宿主内打开 effectcraft 的真实编辑界面，连接当前工作区，或让 Agent 的操作显示在同一页面时使用。
 license: Apache-2.0
+disable-model-invocation: true
 ---
 
 # effectcraft 内嵌编辑器

@@ -1,0 +1,157 @@
+{
+ "id": "chapter-card",
+ "title": "Титр главы",
+ "standalone": true,
+ "placeholders": [
+  "ГЛАВА 1",
+  "Тема главы"
+ ],
+ "steps": [
+  {
+   "command": "comp.new",
+   "params": {
+    "name": "ChapterCard",
+    "width": 1920,
+    "height": 1080,
+    "frameRate": 25,
+    "duration": 4
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "name": "Chapter",
+    "text": "ГЛАВА 1",
+    "position": [
+     960,
+     420
+    ],
+    "size": 90,
+    "justify": "center",
+    "fill": "#ffffff"
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Chapter",
+    "path": "transform/opacity",
+    "time": 0,
+    "timeBase": "comp",
+    "value": 0
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Chapter",
+    "path": "transform/opacity",
+    "time": 0.4,
+    "timeBase": "comp",
+    "value": 100
+   }
+  },
+  {
+   "command": "layer.newText",
+   "params": {
+    "name": "Title",
+    "text": "Тема главы",
+    "position": [
+     960,
+     620
+    ],
+    "size": 64,
+    "justify": "center",
+    "fill": "#ffffff"
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Title",
+    "path": "transform/opacity",
+    "time": 0,
+    "timeBase": "comp",
+    "value": 0
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Title",
+    "path": "transform/opacity",
+    "time": 0.4,
+    "timeBase": "comp",
+    "value": 0
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Title",
+    "path": "transform/opacity",
+    "time": 1,
+    "timeBase": "comp",
+    "value": 100
+   }
+  },
+  {
+   "command": "layer.newShape",
+   "params": {
+    "kind": "rect",
+    "name": "Rule",
+    "size": [
+     600,
+     6
+    ],
+    "fill": "#44caff",
+    "position": [
+     960,
+     720
+    ]
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Rule",
+    "path": "transform/scale",
+    "time": 0,
+    "timeBase": "comp",
+    "value": [
+     0,
+     100,
+     100
+    ]
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Rule",
+    "path": "transform/scale",
+    "time": 0.2,
+    "timeBase": "comp",
+    "value": [
+     0,
+     100,
+     100
+    ]
+   }
+  },
+  {
+   "command": "prop.addKey",
+   "params": {
+    "layer": "Rule",
+    "path": "transform/scale",
+    "time": 0.8,
+    "timeBase": "comp",
+    "value": [
+     100,
+     100,
+     100
+    ]
+   }
+  }
+ ]
+}

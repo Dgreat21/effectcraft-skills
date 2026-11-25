@@ -1,5 +1,9 @@
 # Version-bound release records
 
+## 0.2.0-studio.1 — 2026-11-26 (форк Dgreat21)
+
+Пакет переложен по схеме «один рабочий скилл + справочники + проверка кодом + хук + проверяющий»: 14 `effectcraft-cli*`, `effectcraft-use`, `effectcraft-harness` и 9 сценовых скиллов заменены одним `effectcraft` (вызов только командой). Установка CLI и Python удалена целиком; скилл работает с установленным CLI. Справочники собраны скриптом `build_refs.py` с EffectCraft CLI 0.25.1 (766 команд, 13 тем); рецепты перенесены в `references/recipes/` и прогнаны на 0.25.1. Добавлены `ec.py verify`, хуки PostToolUse/Stop и субагент `effectcraft-verifier`. Тесты и доки harness удалены; новые тесты — `tests/test_skill.py`.
+
 ## dev.69 — 2026-10-13
 
 收敛重复执行实现：新增内置 effectcraft-harness 技能承载唯一脚本载荷（六个入口＋执行契约 JSON），15 个领域技能删除各自 scripts/ 并在文档中按名称路由到 harness；删除无引用的 additional_platforms.py 及其测试；同步与能力矩阵脚本按新布局更新。本仓库回归按新布局维护；目标平台与宿主验收仍开放。

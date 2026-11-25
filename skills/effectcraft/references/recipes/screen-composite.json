@@ -1,0 +1,28 @@
+{
+ "id": "screen-composite",
+ "title": "Замена экрана (фрагмент)",
+ "standalone": false,
+ "placeholders": [],
+ "note": "Фрагмент для уже открытой композиции с выделенным слоем-вставкой; не запускать на пустом проекте.",
+ "steps": [
+  {
+   "command": "layer.addMask",
+   "params": {
+    "rect": [
+     100,
+     100,
+     600,
+     350
+    ],
+    "shape": "rect"
+   }
+  },
+  {
+   "command": "prop.set",
+   "params": {
+    "path": "transform/opacity",
+    "value": 90
+   }
+  }
+ ]
+}
